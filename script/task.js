@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const totalTaskCompletedElement = document.querySelector("#total-task-compelete");
 
     const historyBox = document.querySelector("#history-box");
+    const clearHistoryBtn = document.querySelector(".clear-history-btn"); 
 
     for (let button of completeButtons) {
         button.addEventListener("click", function() {
@@ -25,19 +26,23 @@ document.addEventListener("DOMContentLoaded", function() {
                 const pElement = document.createElement("p");
                 pElement.innerText = `You have completed: ${taskTitle}. Current Time: ${currentTime}`;
 
-              
-                pElement.classList.add("p-3", "rounded-md", "bg-slate-300","mb-4");
+               
+                pElement.classList.add("p-3", "rounded-md", "bg-slate-300", "mb-4");
 
-            
+                
                 historyBox.appendChild(pElement);
                 
                 if(taskCount - 1 === 0){
                     alert("All tasks completed!");
-                }
-                else {
-                    alert(" Board Task Completed " );
+                } else {
+                    alert("Board Task Completed");
                 }
             }
         });
     }
+
+    
+    clearHistoryBtn.addEventListener("click", function() {
+        historyBox.innerHTML = ""; 
+    });
 });
