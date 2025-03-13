@@ -11,8 +11,7 @@
     <!-- daisyui css -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- css  -->
-     <!-- <link rel="stylesheet" href="style/style.css"> -->
+    
 
     <!-- customize tailwind css -->
     <script>
@@ -43,20 +42,20 @@
 
             <div class="flex justify-between px-3">
         <div class="flex gap-2 items-center p-3">
-            <img class="" src="A5-Dev-Board/assets/logo.png" alt="">
+            <img class="" src="assets/logo.png" alt="">
             <h3 class="josefin text-xl">Dev<span class="font-bold">Board</span></h3>
         </div>
            <div class="flex gap-5 items-center">
 
             <div class="flex bg-gray-100  rounded-full shadow-md p-3 gap-2 items-start">
-                <img class="" src="A5-Dev-Board/assets/checkbox.png" alt="">
-                <h3 class="text-black font-bold  mx-auto">26</h3>
+                <img class="" src="assets/checkbox.png" alt="">
+                <h3 id="total-task-compelete" class="text-black font-bold  mx-auto">26</h3>
             </div>
 
             <div>
                 <!-- <img class="p-2  bg-gray-100  rounded-full shadow-md" src="A5-Dev-Board/assets/theme-btn.png" alt=""> -->
 
-                 <button class="ae" > <img class="p-2  bg-gray-100  rounded-full shadow-md" src="A5-Dev-Board/assets/theme-btn.png" alt=""></button>
+                 <button class="ae" > <img class="p-2  bg-gray-100  rounded-full shadow-md" src="assets/theme-btn.png" alt=""></button>
             </div>
 
            </div> 
@@ -78,20 +77,20 @@
            <div class="flex gap-4 mb-4 items-center bg-slate-300 rounded-md px-12 py-8 ">
             <!-- img + button section   -->
              <div >
-              <img src="A5-Dev-Board/assets/checkbox.png" alt="">
+              <img src="assets/checkbox.png" alt="">
               
              </div>
              <!-- text area  -->
               <div>
                 <h3 class="text-base font-medium">Task Assiged</h3>
-                <h4 class="text-2xl font-bold">6</h4>
+                <h4 id="task-avilabel" class="text-2xl font-bold">6</h4>
               </div>
            </div>
 
            <!-- Discover sectiom  -->
             <div class="">
               
-              <button class="flex gap-2 items-center rounded-md  text-white text-xl text-bold bg-gradient-to-r from-blue-900 via-blue-700 to-blue-400 border-none px-11 py-5 mb-4  "><img src="A5-Dev-Board/assets/board.png"
+              <button id="discover-btn" class="flex gap-2 items-center rounded-md  text-white text-xl text-bold bg-gradient-to-r from-blue-900 via-blue-700 to-blue-400 border-none px-11 py-5 mb-4 transition-transform transform hover:scale-110 hover:-translate-y-1 duration-150"><img src="assets/board.png"
                 alt=""><span>Discover Something New Today!</span></button>
             
             </div>
@@ -102,12 +101,12 @@
 
               <!-- img  -->
               <div>
-                <img class=" bg-white p-2 rounded-xl" src="A5-Dev-Board/assets/calender.png" alt="">
+                <img class=" bg-white p-2 rounded-xl" src="assets/calender.png" alt="">
               </div>
 
               <!-- text  -->
                <div>
-                <p class="text-base text-white font-semibold relative top-3"> Fri Feb 28 2025</p>
+                <p class="text-base text-black font-semibold relative top-3"> Fri Feb 28 2025</p>
                </div>
 
              </div>
@@ -133,7 +132,7 @@
               </div>
               <!-- button area  -->
               <div>
-                <button class="bg-blue-950 text-white w-32 font-semibold rounded-md text-base p-3">Completed</button>
+                <button  class="bg-blue-950 text-white w-32 font-semibold rounded-md text-base p-3 transition-transform transform hover:scale-110 hover:-translate-y-1 duration-150 complete-btn ">Completed</button>
               </div>
               
             </div>
@@ -154,7 +153,7 @@
               </div>
               <!-- button area  -->
               <div>
-                <button class="bg-blue-950 text-white w-32 font-semibold rounded-md text-base p-3">Completed</button>
+                <button class="  bg-blue-950 text-white w-32 font-semibold rounded-md text-base p-3 transition-transform transform hover:scale-110 hover:-translate-y-1 duration-150 complete-btn">Completed</button>
               </div>
               
             </div>
@@ -175,7 +174,7 @@
               </div>
               <!-- button area  -->
               <div>
-                <button class="bg-blue-950 text-white w-32 font-semibold rounded-md text-base p-3">Completed</button>
+                <button  class="  bg-blue-950 text-white w-32 font-semibold rounded-md text-base p-3 transition-transform transform hover:scale-110 hover:-translate-y-1 duration-150 complete-btn">Completed</button>
               </div>
               
             </div>
@@ -196,7 +195,7 @@
               </div>
               <!-- button area  -->
               <div>
-                <button class="bg-blue-950 text-white w-32 font-semibold rounded-md text-base p-3">Completed</button>
+                <button  class=" bg-blue-950 text-white w-32 font-semibold rounded-md text-base p-3 transition-transform transform hover:scale-110 hover:-translate-y-1 duration-150 complete-btn">Completed</button>
               </div>
               
             </div>
@@ -206,7 +205,7 @@
            <!-- 5th card  -->
            <div class="bg-slate-300 rounded-md p-4">
             <h5 class="bg-white p-2 rounded-lg w-24 h-9 font-semibold text-sm text-center items-center">Google LLC</h5>
-            <h2 class="text-2xl text-black font-semibold my-3"> Integrate OpenAI API </h2>
+            <h2 class="text-2xl text-black font-semibold my-3 "> Integrate OpenAI API </h2>
            <p class="bg-white rounded-md text-sm p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
             <!-- button & date  -->
             <div class="flex justify-between items-center mt-6">
@@ -217,7 +216,7 @@
               </div>
               <!-- button area  -->
               <div>
-                <button class="bg-blue-950 text-white w-32 font-semibold rounded-md text-base p-3">Completed</button>
+                <button  class=" bg-blue-950 text-white w-32 font-semibold rounded-md text-base p-3 transition-transform transform hover:scale-110 hover:-translate-y-1 duration-150 complete-btn">Completed</button>
               </div>
               
             </div>
@@ -227,7 +226,7 @@
            <!-- 6th card  -->
            <div class="bg-slate-300 rounded-md p-4">
             <h5 class="bg-white p-2 rounded-lg w-24 h-9 font-semibold text-sm text-center items-center">Glassdoar</h5>
-            <h2 class="text-2xl text-black font-semibold my-3">Improve Job searching  </h2>
+            <h2 class="text-2xl text-black font-semibold my-3 ">Improve Job searching  </h2>
             <p class="bg-white rounded-md text-sm p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
             <!-- button & date  -->
             <div class="flex justify-between items-center mt-6">
@@ -238,7 +237,7 @@
               </div>
               <!-- button area  -->
               <div>
-                <button class="bg-blue-950 text-white w-32 font-semibold rounded-md text-base p-3">Completed</button>
+                <button  class="  bg-blue-950 text-white w-32 font-semibold rounded-md text-base p-3 transition-transform transform hover:scale-110 hover:-translate-y-1 duration-150 complete-btn">Completed</button>
               </div>
               
             </div>
@@ -255,19 +254,29 @@
          
           <div class="rounded-lg shadow-[0px_5px_10px_rgba(0,0,0,0.5)] p-10 w-1/5">
           <div class="flex gap-2 items-center">
-            <img class=" " src="A5-Dev-Board/assets/activity.png" alt="">
+            <img class=" " src="assets/activity.png" alt="">
             <h3 class="text-xl font-semibold">Activity Log</h3>
           </div>
-          <button class="text-base  rounded-md text-white  my-4 font-semibold bg-gradient-to-r from-blue-900 via-blue-700 to-blue-400 border-none py-3 px-6">Clear History</button>
-          <hr>
+          <button class="text-base  rounded-md text-white  my-4 font-semibold bg-gradient-to-r from-blue-900 via-blue-700 to-blue-400 border-none py-3 px-6 transition-transform transform hover:scale-110 hover:-translate-y-1 duration-150 clear-history-btn">Clear History</button>
+          <hr class=" my-3 ">
 
-          <div class=" mt-4">
-            <p> </p>
-          </div>      
+          
+
+          <div id="history-box">
+
+          </div> 
+
+         
+          
+          
 
         </div> 
       
    </section>
      </main>
+     <script src="utilitis/utilites.js"></script>
+     <script src="script/task.js"></script>
+     <script src="script/discober.js"></script>
+     <script src="script/history.js"></script>
 </body>
 </html>
